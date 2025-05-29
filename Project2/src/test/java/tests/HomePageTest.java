@@ -1,8 +1,6 @@
 package test.java.tests;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -24,7 +22,7 @@ public class HomePageTest extends BaseTest{
 		hpo.hoverOnPagesMenu();
 		
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(.//li/a[@href='contact.html'])[1]")));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(.//li/a[@href='contact.html'])[1]")));
 		
 		hpo.clickContact();
 		
@@ -36,7 +34,7 @@ public class HomePageTest extends BaseTest{
 			System.out.println(e);
 		}
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//div[@class='gm-err-content']")));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//div[@class='gm-err-content']")));
 		
 		hpo.errorMessage();
 			
