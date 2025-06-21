@@ -18,7 +18,7 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-		driver.get("http://localhost/ATE_PEP2_Testing_Using_TestNG/");
+		driver.get("http://localhost/ecomm/ATE_PEP2_Testing_Using_TestNG/");
 		
 	}
 	
